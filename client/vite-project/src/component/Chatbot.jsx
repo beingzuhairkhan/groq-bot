@@ -12,7 +12,7 @@ const Chatbot = () => {
     setMessages((prev) => [...prev, userMessage]);
 
     try {
-      const response = await axios.post("http://localhost:3001/api/chat", {
+      const response = await axios.post("https://groq-bot.onrender.com/api/chat", {
         message: userInput,
       });
 
